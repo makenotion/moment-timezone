@@ -4,7 +4,7 @@
 //! license : MIT
 //! github.com/moment/moment-timezone
 
-module.export = function (moment) {
+module.exports = function (moment) {
 	"use strict";
 
 	// Do not load moment-timezone a second time.
