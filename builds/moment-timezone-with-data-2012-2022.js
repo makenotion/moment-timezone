@@ -4,18 +4,7 @@
 //! license : MIT
 //! github.com/moment/moment-timezone
 
-(function (root, factory) {
-	"use strict";
-
-	/*global define*/
-	if (typeof define === 'function' && define.amd) {
-		define(['moment'], factory);                 // AMD
-	} else if (typeof module === 'object' && module.exports) {
-		module.exports = factory(require('moment')); // Node
-	} else {
-		factory(root.moment);                        // Browser
-	}
-}(this, function (moment) {
+module.export = function (moment) {
 	"use strict";
 
 	// Do not load moment-timezone a second time.
@@ -1201,4 +1190,4 @@
 
 
 	return moment;
-}));
+}
